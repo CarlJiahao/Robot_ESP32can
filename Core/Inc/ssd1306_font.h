@@ -26,7 +26,7 @@ typedef struct
 {
     uint8_t width;
     uint8_t height;
-    uint16_t *data;
+    const uint16_t *data;
 
 } SSD1306_FONT;
 

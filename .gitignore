@@ -1,0 +1,46 @@
+# Keil MDK-ARM 临时文件和输出文件
+MDK-ARM/*.uvgui.*
+MDK-ARM/*.uvoptx
+MDK-ARM/DebugConfig/
+MDK-ARM/HAL_C8T6/
+MDK-ARM/RTE/
+*.crf
+*.htm
+*.lnp
+*.o
+*.plg
+*.sct
+*.tra
+*.d
+*.dep
+
+# Keil Assistant VSCode 插件日志
+MDK-ARM/.vscode/*.log
+MDK-ARM/.vscode/*.lock
+
+# STM32CubeMX 生成的文件（保留 .ioc）
+*.mxproject
+
+# 构建说明文档（可选）
+BUILD_FIX.md
+VSCODE_KEIL_SETUP.md
+
+# VSCode 工作区设置（保留 IntelliSense 配置）
+.vscode/settings.json
+.vscode/c_cpp_properties.json
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# IDE 配置（如果使用其他 IDE）
+.idea/
+*.swp
+*.swo
+*~
+
+# 构建输出
+build/
+out/
+bin/
+obj/

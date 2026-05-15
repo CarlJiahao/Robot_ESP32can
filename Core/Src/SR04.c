@@ -45,7 +45,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
             // 计算高电平时间
             high_time = measure_Buf[1] - measure_Buf[0];  // 高电平时间
             // 发送高电平时间到串口
-            char buffer[100];
+            // char buffer[100];
             // snprintf(buffer, sizeof(buffer), "\r\n----高电平时间-%d-us----\r\n", high_time);
             // HAL_UART_Transmit(&huart1, (uint8_t*)buffer, strlen(buffer), HAL_MAX_DELAY);
 

@@ -119,20 +119,20 @@ void charge_bump_setting(uint8_t charge_bump);
 void set_contrast_control(uint8_t value);
 
 // Resume to RAM content display(reset)
-void entire_display_off();
-void entire_display_on();    
+void entire_display_off(void);
+void entire_display_on(void);    
 
 // 0x00 : BLACK, 0x01 : WHITE
-void set_normal_display();                
+void set_normal_display(void);                
 
 // 0x00 : WHITE, 0x01 : BLACK
-void set_inverse_display();        
+void set_inverse_display(void);        
 
 // sleep mode (reset)
-void set_display_off();   
+void set_display_off(void);   
 
 // normal mode
-void set_display_on();                      
+void set_display_on(void);                      
 
 
 /* Scrolling Function */
@@ -199,12 +199,12 @@ void set_v_comh_deselect_level(uint8_t deselect_level);
 
 
 /* SSD1306 Function */
-void ssd1306_init();
+void ssd1306_init(void);
 
-void ssd1306_update_screen();
+void ssd1306_update_screen(void);
  
-void ssd1306_black_screen();
-void ssd1306_white_screen();
+void ssd1306_black_screen(void);
+void ssd1306_white_screen(void);
 
 // Draw one black pixel
 // @param : 0 - 128
@@ -224,8 +224,8 @@ char ssd1306_write_string(SSD1306_FONT font, char *str);
 // @param : 0 - 64 
 void ssd1306_set_cursor(uint8_t x, uint8_t y);
 
-void ssd1306_enter();
-void ssd1306_space();
+void ssd1306_enter(void);
+void ssd1306_space(void);
 
 // DIY Function
 void ssd1306_drow_line(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2);
@@ -233,7 +233,7 @@ void ssd1306_drow_boxes(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2);
 void ssd1306_clear_area(uint8_t x1, uint8_t y1, uint8_t x2, uint8_t y2);
 
 
-// 功能函数
+// 功能 함수
 void display_oled(void);
 float sensing(void);
 #endif /* __SSD1306_H__ */
